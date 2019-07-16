@@ -1346,6 +1346,25 @@ new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
     }
   }
 });
+window.store = {
+  user: {
+    name: 'John Doe'
+  }
+};
+new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
+  el: '#one',
+  data: {
+    foo: 'bar',
+    shared: store
+  }
+});
+new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
+  el: '#two',
+  data: {
+    foo: 'other',
+    shared: store
+  }
+});
 
 /***/ }),
 

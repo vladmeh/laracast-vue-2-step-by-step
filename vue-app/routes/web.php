@@ -23,3 +23,6 @@ Route::get('/', function () {
 
 Route::get('projects/create', 'ProjectsController@create');
 Route::post('projects', 'ProjectsController@store');
+
+Route::view('/episodes/23', 'episodes.23');
+Route::view('/episodes/24', 'episodes.24');
