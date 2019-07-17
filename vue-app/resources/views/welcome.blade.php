@@ -19,9 +19,7 @@
     @yield('content')
 </div>
 
-<div id="one" class="container"></div>
-
-<div id="two" class="container"></div>
+@yield('test')
 
 <script src="{{ mix('/js/manifest.js') }}"></script>
 <script src="{{ mix('/js/vendor.js') }}"></script>

@@ -26,3 +26,4 @@ Route::post('projects', 'ProjectsController@store');
 
 Route::view('/episodes/23', 'episodes.23');
 Route::view('/episodes/24', 'episodes.24');
+Route::view('/episodes/25', 'episodes.25');
