@@ -3,10 +3,10 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Home Page</div>
+                    <div class="panel-heading">About Page</div>
 
                     <div class="panel-body">
-                        I'm an example component.
+                        {{ body }}
                     </div>
                 </div>
             </div>
@@ -16,8 +16,13 @@
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
+        name: "About",
+        created() {
+            // axios.
         }
     }
 </script>
+
+<style scoped>
+
+</style>
