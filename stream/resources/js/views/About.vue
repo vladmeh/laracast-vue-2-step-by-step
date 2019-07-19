@@ -6,7 +6,7 @@
                     <div class="panel-heading">About Page</div>
 
                     <div class="panel-body">
-                        {{ body }}
+<!--                        {{ body }}-->
                     </div>
                 </div>
             </div>
