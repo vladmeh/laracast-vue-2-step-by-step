@@ -27,7 +27,7 @@
     "concurrency": 5,
     "failFast": true,
     "failWithoutAssertions": false,
-    "_tap": true,
+    "tap": true,
     "verbose": true,
     "compileEnhancements": false,
     "require": [
