@@ -1,6 +1,7 @@
 import Vue from 'vue';
 
 import Coupon from './components/Coupon';
+import MenuList from './components/MenuList';
 
 new Vue({
     el: '#app',
@@ -10,6 +11,7 @@ new Vue({
     },
 
     components: {
-        Coupon
+        Coupon,
+        MenuList
     }
 });
