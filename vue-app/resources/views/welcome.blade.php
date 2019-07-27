@@ -7,6 +7,7 @@
     <title>Laravel</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    @stack('style')
 
     <style>
         body {
@@ -20,7 +21,7 @@
 </div>
 
 @yield('test')
-
+@stack('scripts')
 <script src="{{ mix('/js/manifest.js') }}"></script>
 <script src="{{ mix('/js/vendor.js') }}"></script>
 <script src="{{ mix('/js/app.js') }}"></script>
