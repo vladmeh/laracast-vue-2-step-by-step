@@ -29,3 +29,4 @@ Route::view('/episodes/24', 'episodes.24');
 Route::view('/episodes/25', 'episodes.25');
 Route::view('/episodes/33', 'episodes.33');
 Route::view('/episodes/34', 'episodes.34');
+Route::view('/episodes/35', 'episodes.35');

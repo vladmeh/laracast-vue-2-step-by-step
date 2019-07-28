@@ -5,6 +5,7 @@ import Notification from './components/Notification';
 import Coupon from './components/Coupon';
 import MenuList from './components/MenuList';
 import Carousel from './components/Carousel';
+import Testimonials from './components/Testimonials';
 
 new Vue({
     el: '#app',
@@ -18,7 +19,8 @@ new Vue({
         Notification,
         Coupon,
         MenuList,
-        Carousel
+        Carousel,
+        Testimonials
     }
 });
 
