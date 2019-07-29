@@ -6,12 +6,14 @@ import Coupon from './components/Coupon';
 import MenuList from './components/MenuList';
 import Carousel from './components/Carousel';
 import Testimonials from './components/Testimonials';
+import Modal from './components/BtnModal';
 
 new Vue({
     el: '#app',
 
     data: {
         coupon: 'FREEBIE',
+        showModal: false
     },
 
     components: {
@@ -20,7 +22,13 @@ new Vue({
         Coupon,
         MenuList,
         Carousel,
-        Testimonials
+        Testimonials,
+        Modal
+    },
+    methods: {
+        onShowModal(){
+            this.showModal = true;
+        }
     }
 });
 
