@@ -295,13 +295,10 @@ __webpack_require__.r(__webpack_exports__);
     });
   },
   methods: {
-    updateFeaturedTestimonial: function updateFeaturedTestimonial(testimonial) {
-      var _this2 = this;
-
-      this.timer = setTimeout(function () {
-        _this2.featuredTestimonial = testimonial;
-      }, 250);
-    },
+    updateFeaturedTestimonial: lodash__WEBPACK_IMPORTED_MODULE_1___default.a.throttle(function (testimonial) {
+      console.log('I WAS CALLED');
+      this.featuredTestimonial = testimonial;
+    }, 2000),
     clearTimer: function clearTimer() {
       clearTimeout(this.timer);
     }

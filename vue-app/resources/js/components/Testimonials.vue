@@ -43,7 +43,7 @@
         name: "Testimonials",
         data() {
             return {
-                testimonials : [],
+                testimonials: [],
                 featuredTestimonial: {},
                 timer: null
             }
@@ -58,13 +58,12 @@
         },
 
         methods: {
-            updateFeaturedTestimonial(testimonial) {
-                this.timer = setTimeout(() => {
-                    this.featuredTestimonial = testimonial;
-                }, 250);
-            },
+            updateFeaturedTestimonial: _.throttle(function (testimonial) {
+                console.log('I WAS CALLED');
+                this.featuredTestimonial = testimonial;
+            }, 2000),
 
-            clearTimer(){
+            clearTimer() {
                 clearTimeout(this.timer);
             }
         }
