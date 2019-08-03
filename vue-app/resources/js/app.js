@@ -14,6 +14,7 @@ import Carousel from './components/Carousel';
 import Testimonials from './components/Testimonials';
 import Modal from './components/BtnModal';
 import SupportButton from './components/SupportButton';
+import Accordion from './components/Accordion';
 
 new Vue({
     el: '#app',
@@ -31,7 +32,8 @@ new Vue({
         Carousel,
         Testimonials,
         Modal,
-        SupportButton
+        SupportButton,
+        Accordion
     },
     methods: {
         onShowModal() {
