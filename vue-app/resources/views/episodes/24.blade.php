@@ -1,7 +1,10 @@
-@extends('welcome');
+@extends('layout');
 
 
-@section('test')
+@section('section')
+
+<div id="app" class="container"></div>
+
 <div id="one" class="container">
     <h1>
         @{{ shared.user.name }}
