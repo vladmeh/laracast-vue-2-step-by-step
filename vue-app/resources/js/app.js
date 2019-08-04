@@ -15,7 +15,7 @@ import Testimonials from './components/Testimonials';
 import Modal from './components/BtnModal';
 import SupportButton from './components/SupportButton';
 import Accordion from './components/Accordion';
-import Series from './components/Series';
+import Pinned from './components/Pinned';
 
 new Vue({
     el: '#app',
@@ -35,7 +35,7 @@ new Vue({
         Modal,
         SupportButton,
         Accordion,
-        Series
+        Pinned
     },
     methods: {
         onShowModal() {
