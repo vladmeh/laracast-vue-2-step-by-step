@@ -40,3 +40,4 @@ Route::prefix('/episodes')->group(function () {
 });
 
 Route::post('/contact', 'ContactController@store');
+Route::get('/faq', 'QuestionController@index');

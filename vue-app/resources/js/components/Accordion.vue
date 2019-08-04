@@ -1,30 +1,34 @@
 <template>
-    <div class="box">
-            <h3 v-text="title"
-                class="title is-spaced cursor-pointer"
-                @click="isOpen = ! isOpen"
-            ></h3>
-
-            <div v-html="body" v-show="isOpen" class="subtitle is-4"></div>
+    <div>
+        <accordion-item
+            v-for="(item, index) in items"
+            :item = "item"
+            :key="index"
+            :is-open="activeItemIndex === index"
+            @toggled="onToggle"
+        ></accordion-item>
     </div>
+
 </template>
 
 <script>
+    import AccordionItem from "./AccordionItem";
     export default {
         name: "Accordion",
-        props: ['title', 'body'],
+        components: {AccordionItem},
+        props: ['items'],
         data() {
             return {
-                isOpen: false
-            };
+                activeItemIndex: null
+            }
+        },
+        methods: {
+            onToggle(index){
+                if (this.activeItemIndex === index){
+                    return this.activeItemIndex = null;
+                }
+                this.activeItemIndex = index;
+            }
         }
     }
 </script>
-
-<style scoped lang="scss">
-    .cursor-pointer{
-        &:hover{
-            cursor: pointer;
-        }
-    }
-</style>
