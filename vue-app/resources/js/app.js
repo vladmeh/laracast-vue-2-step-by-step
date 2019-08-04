@@ -15,6 +15,7 @@ import Testimonials from './components/Testimonials';
 import Modal from './components/BtnModal';
 import SupportButton from './components/SupportButton';
 import Accordion from './components/Accordion';
+import Series from './components/Series';
 
 new Vue({
     el: '#app',
@@ -33,7 +34,8 @@ new Vue({
         Testimonials,
         Modal,
         SupportButton,
-        Accordion
+        Accordion,
+        Series
     },
     methods: {
         onShowModal() {
@@ -65,6 +67,6 @@ if (document.getElementById('one') && document.getElementById('two')) {
             foo: 'other',
             shared: store
         }
-    });
+});
 }
 
