@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('container')
 @section('content')
 
         <accordion :items="{{ $questions }}"></accordion>

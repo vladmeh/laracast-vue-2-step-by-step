@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('container')
 
 @section('content')
 <menu-list :items="['one', 'two', 'three']">

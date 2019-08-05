@@ -1,4 +1,4 @@
-@extends('welcome');
+@extends('container');
 
 @section('content')
     <notification></notification>

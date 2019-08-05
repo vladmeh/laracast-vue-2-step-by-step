@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('container')
 @section('content')
     <accordion
         v-for="n in 5"

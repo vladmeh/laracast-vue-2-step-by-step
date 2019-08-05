@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('container')
 
 @section('content')
     <h1>Modals</h1>
