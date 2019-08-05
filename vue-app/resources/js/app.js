@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VModal from 'vue-js-modal';
 import VueSwal from 'vue-swal';
+import PopperTooltip from 'tooltip.js';
 
 
 Vue.use(VModal);
@@ -16,6 +17,18 @@ import Modal from './components/BtnModal';
 import SupportButton from './components/SupportButton';
 import Accordion from './components/Accordion';
 import Pinned from './components/Pinned';
+import Tooltip from './components/Tooltip';
+
+Vue.directive('tooltip', {
+    bind(elem, bindings){
+        new PopperTooltip(elem, {
+            placement: bindings.arg || 'top',
+            title: bindings.value
+        });
+    }
+});
+
+Vue.component('tooltip', Tooltip);
 
 new Vue({
     el: '#app',
@@ -23,6 +36,15 @@ new Vue({
     data: {
         coupon: 'FREEBIE',
         showModal: false
+    },
+
+    mounted() {
+        document.querySelectorAll('[data-tooltip]').forEach(elem => {
+            new PopperTooltip(elem, {
+                placement: elem.dataset.tooltipPlacement || 'top',
+                title: elem.dataset.tooltip
+            });
+        })
     },
 
     components: {
@@ -35,7 +57,7 @@ new Vue({
         Modal,
         SupportButton,
         Accordion,
-        Pinned
+        Pinned,
     },
     methods: {
         onShowModal() {
