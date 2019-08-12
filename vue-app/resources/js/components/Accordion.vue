@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="ais-result">
         <accordion-item
             v-for="(item, index) in items"
             :item = "item"
@@ -7,15 +7,21 @@
             :is-open="activeItemIndex === index"
             @toggled="onToggle"
         ></accordion-item>
+        <load-more container=".ais-result"></load-more>
     </div>
 
 </template>
 
 <script>
     import AccordionItem from "./AccordionItem";
+    import LoadMore from "./LoadMore";
+
     export default {
         name: "Accordion",
-        components: {AccordionItem},
+        components: {
+            AccordionItem,
+            LoadMore
+        },
         props: ['items'],
         data() {
             return {
