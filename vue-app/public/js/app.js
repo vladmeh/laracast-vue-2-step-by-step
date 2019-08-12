@@ -343,6 +343,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Render.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Render.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Render',
+  data: function data() {
+    return {
+      name: 'Jon Doe'
+    };
+  },
+  render: function render(element) {
+    return element("div", {
+      attrs: {
+        id: "foobar",
+        "class": "box"
+      }
+    }, [element("h1", {
+      "class": ["title", "is-1"]
+    }, this.name), element("h2", {
+      "class": "subtitle"
+    }, this.name)]);
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SupportButton.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SupportButton.vue?vue&type=script&lang=js& ***!
@@ -27665,12 +27697,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Accordion__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/Accordion */ "./resources/js/components/Accordion.vue");
 /* harmony import */ var _components_Pinned__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/Pinned */ "./resources/js/components/Pinned.vue");
 /* harmony import */ var _components_Tooltip__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/Tooltip */ "./resources/js/components/Tooltip.vue");
+/* harmony import */ var _components_Render__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/Render */ "./resources/js/components/Render.vue");
 
 
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_js_modal__WEBPACK_IMPORTED_MODULE_1___default.a);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_swal__WEBPACK_IMPORTED_MODULE_2___default.a);
+
 
 
 
@@ -27715,7 +27749,8 @@ new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
     Modal: _components_BtnModal__WEBPACK_IMPORTED_MODULE_10__["default"],
     SupportButton: _components_SupportButton__WEBPACK_IMPORTED_MODULE_11__["default"],
     Accordion: _components_Accordion__WEBPACK_IMPORTED_MODULE_12__["default"],
-    Pinned: _components_Pinned__WEBPACK_IMPORTED_MODULE_13__["default"]
+    Pinned: _components_Pinned__WEBPACK_IMPORTED_MODULE_13__["default"],
+    Render: _components_Render__WEBPACK_IMPORTED_MODULE_15__["default"]
   },
   methods: {
     onShowModal: function onShowModal() {
@@ -28471,6 +28506,56 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Pinned_vue_vue_type_template_id_3a641603_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/components/Render.vue":
+/*!********************************************!*\
+  !*** ./resources/js/components/Render.vue ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Render_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Render.vue?vue&type=script&lang=js& */ "./resources/js/components/Render.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+var render, staticRenderFns
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  _Render_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"],
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Render.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Render.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/Render.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Render_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Render.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Render.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Render_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 

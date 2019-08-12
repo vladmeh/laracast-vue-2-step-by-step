@@ -18,6 +18,7 @@ import SupportButton from './components/SupportButton';
 import Accordion from './components/Accordion';
 import Pinned from './components/Pinned';
 import Tooltip from './components/Tooltip';
+import Render from './components/Render';
 
 Vue.directive('tooltip', {
     bind(elem, bindings){
@@ -58,6 +59,7 @@ new Vue({
         SupportButton,
         Accordion,
         Pinned,
+        Render
     },
     methods: {
         onShowModal() {

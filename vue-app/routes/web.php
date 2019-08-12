@@ -39,6 +39,7 @@ Route::prefix('/episodes')->group(function () {
     Route::view('40', 'episodes.40');
     Route::view('42', 'episodes.42');
     Route::view('44', 'episodes.44');
+    Route::view('45', 'episodes.45');
 });
 
 Route::post('/contact', 'ContactController@store');
