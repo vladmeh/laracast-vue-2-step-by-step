@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <a @click="$modal.show('contact-support-modal')">Support</a>
+    <div class="mb-100">
+        <a class="button is-success" @click="$modal.show('contact-support-modal')">Support</a>
         <modal
             name="contact-support-modal"
             height="auto"
@@ -171,6 +171,38 @@
         padding: {
             left: 2.5rem;
             right: 2.5rem;
+        };
+    }
+
+    .py-100 {
+        padding: {
+            top: 100vh;
+            bottom: 100vh;
+        };
+    }
+
+    .my-100 {
+        margin: {
+            top: 100vh;
+            bottom: 100vh;
+        };
+    }
+
+    .mb-100 {
+        margin: {
+            bottom: 100vh;
+        };
+    }
+
+    .mb-150 {
+        margin: {
+            bottom: 150vh;
+        };
+    }
+
+    .mb-200 {
+        margin: {
+            bottom: 200vh;
         };
     }
 </style>

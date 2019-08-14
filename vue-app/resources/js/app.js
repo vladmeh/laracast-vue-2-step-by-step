@@ -20,6 +20,7 @@ import Pinned from './components/Pinned';
 import Tooltip from './components/Tooltip';
 import Render from './components/Render';
 import Count from './components/Count';
+import ConditionalElement from './components/ConditionalElement';
 
 Vue.directive('tooltip', {
     bind(elem, bindings){
@@ -61,7 +62,8 @@ new Vue({
         Accordion,
         Pinned,
         Render,
-        Count
+        Count,
+        ConditionalElement
     },
     methods: {
         onShowModal() {
