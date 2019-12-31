@@ -2,10 +2,10 @@
 
 @section('content')
     <carousel :autoplay="true">
-        <img src="https://placeimg.com/640/480/any">
-        <img src="https://placeimg.com/640/480/any?2">
-        <img src="https://placeimg.com/640/480/any?3">
-        <img src="https://placeimg.com/640/480/any?4">
-        <img src="https://placeimg.com/640/480/any?5">
+        <img src="{{ asset('images/image_2.png') }}">
+        <img src="{{ asset('images/image_3.png') }}">
+        <img src="{{ asset('images/image_4.png') }}">
+        <img src="{{ asset('images/image_5.png') }}">
+        <img src="{{ asset('images/image_7.png') }}">
     </carousel>
 @endsection
